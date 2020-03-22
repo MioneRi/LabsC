@@ -1,0 +1,40 @@
+"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Users\PC\Desktop\лабыСи\Лаба1(проект2)
+-- The C compiler identification is MSVC 19.24.28316.0
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe -- broken
+CMake Error at C:/Program Files/JetBrains/CLion 2019.3.4/bin/cmake/win/share/cmake-3.15/Modules/CMakeTestCCompiler.cmake:60 (message):
+  The C compiler
+
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: C:/Users/PC/Desktop/Р»Р°Р±С‹РЎРё/Р›Р°Р±Р°1(РїСЂРѕРµРєС‚2)/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):nmake /nologo cmTC_199a0\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_199a0.dir\build.make /nologo -L                  CMakeFiles\cmTC_199a0.dir\build
+    Building C object CMakeFiles/cmTC_199a0.dir/testCCompiler.c.obj
+    	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\PC\AppData\Local\Temp\nm4F3E.tmp
+    testCCompiler.c
+    Linking C executable cmTC_199a0.exe
+    	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_199a0.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_199a0.dir\objects1.rsp @C:\Users\PC\AppData\Local\Temp\nm4FAC.tmp
+    LINK Pass 1: command "C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_199a0.dir\objects1.rsp /out:cmTC_199a0.exe /implib:cmTC_199a0.lib /pdb:C:\Users\PC\Desktop\??????\????1(??????2)\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_199a0.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_199a0.dir/intermediate.manifest CMakeFiles\cmTC_199a0.dir/manifest.res" failed (exit code 1201) with the following output:
+    LINK : fatal error LNK1201: в•¬В°С€СЃСЉСЂ СЏРЃС€ С‡СЂСЏС€С‘С€ С‚ СЃСЂС‡С” С„СЂСЌСЌв€љС— "C:\Users\PC\Desktop\??????\????1(??????2)\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_199a0.pdb" СЏРЃСЋСѓРЃСЂСЊСЊв€љ; С‚СЋС‡СЊСЋС†СЌСЋ, СЌС… С—С‚СЂР„СЂС…Р„ СЊС…С‘Р„СЂ СЌСЂ С„С€С‘СЉС…, СЌС…С„СЋСЏС”С‘Р„С€СЊв€љС‰ СЏС”Р„в„– С€С‹С€ СЌС…С„СЋС‘Р„СЂР„СЋСћСЌСЋ СЏРЃСЂС‚
+    NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : С‚СЋС‡С‚РЃСЂв€™С…СЌСЌв€љС‰ СЉСЋС„ "0xffffffff"
+    Stop.
+    NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" : С‚СЋС‡С‚РЃСЂв€™С…СЌСЌв€љС‰ СЉСЋС„ "0x2"
+    Stop.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/PC/Desktop/Р»Р°Р±С‹РЎРё/Р›Р°Р±Р°1(РїСЂРѕРµРєС‚2)/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/PC/Desktop/Р»Р°Р±С‹РЎРё/Р›Р°Р±Р°1(РїСЂРѕРµРєС‚2)/cmake-build-debug/CMakeFiles/CMakeError.log".

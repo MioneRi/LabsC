@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/PC/Desktop/лабыСи/Лаба3/CMakeLists.txt
+  Task3.2(25).c
+C:\Users\PC\Desktop\лабыСи\Лаба3\StrokiLiba.h(27): warning C4715: binpow: значение возвращается не при всех путях выполнения
+  main.vcxproj -> C:\Users\PC\Desktop\лабыСи\Лаба3\out\Release\main.exe

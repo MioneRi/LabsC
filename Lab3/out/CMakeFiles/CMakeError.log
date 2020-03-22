@@ -1,0 +1,298 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags:  
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags: -c 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags:  
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags: -c 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: cl 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+Не удается найти указанный файл
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags:  
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags: -c 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags:  
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags: -c 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+Не удается найти указанный файл
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: cl 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+Не удается найти указанный файл
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/PC/Desktop/лабыСи/Лаба3/out/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_8cfea\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\nmake.exe" -f CMakeFiles\cmTC_8cfea.dir\build.make /nologo -L                  CMakeFiles\cmTC_8cfea.dir\build
+Building C object CMakeFiles/cmTC_8cfea.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @C:\Users\PC\AppData\Local\Temp\nmE42A.tmp
+testCCompiler.c
+Linking C executable cmTC_8cfea.exe
+	D:\CMake\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_8cfea.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe /nologo @CMakeFiles\cmTC_8cfea.dir\objects1.rsp @C:\Users\PC\AppData\Local\Temp\nmE7F4.tmp
+LINK Pass 1: command "C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe /nologo @CMakeFiles\cmTC_8cfea.dir\objects1.rsp /out:cmTC_8cfea.exe /implib:cmTC_8cfea.lib /pdb:C:\Users\PC\Desktop\??????\????3\out\CMakeFiles\CMakeTmp\cmTC_8cfea.pdb /version:0.0 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_8cfea.dir/intermediate.manifest CMakeFiles\cmTC_8cfea.dir/manifest.res" failed (exit code 1) with the following output:
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /nologo: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /out:cmTC_8cfea.exe: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /implib:cmTC_8cfea.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /pdb:C:\Users\PC\Desktop\??????\????3\out\CMakeFiles\CMakeTmp\cmTC_8cfea.pdb: Invalid argument
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /version:0.0: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /debug: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /INCREMENTAL: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /subsystem:console: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find kernel32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find user32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find gdi32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find winspool.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find shell32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find ole32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find oleaut32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find uuid.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find comdlg32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find advapi32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /MANIFEST: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /MANIFESTFILE:CMakeFiles\cmTC_8cfea.dir/intermediate.manifest: Invalid argument
+CMakeFiles\cmTC_8cfea.dir/manifest.res: file not recognized: File format not recognized
+NMAKE : fatal error U1077: D:\CMake\bin\cmake.exe : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/PC/Desktop/лабыСи/Лаба3/out/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_0eb6f\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\nmake.exe" -f CMakeFiles\cmTC_0eb6f.dir\build.make /nologo -L                  CMakeFiles\cmTC_0eb6f.dir\build
+Building C object CMakeFiles/cmTC_0eb6f.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @C:\Users\PC\AppData\Local\Temp\nmC93B.tmp
+testCCompiler.c
+Linking C executable cmTC_0eb6f.exe
+	D:\CMake\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_0eb6f.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe /nologo @CMakeFiles\cmTC_0eb6f.dir\objects1.rsp @C:\Users\PC\AppData\Local\Temp\nmC9F7.tmp
+LINK Pass 1: command "C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe /nologo @CMakeFiles\cmTC_0eb6f.dir\objects1.rsp /out:cmTC_0eb6f.exe /implib:cmTC_0eb6f.lib /pdb:C:\Users\PC\Desktop\??????\????3\out\CMakeFiles\CMakeTmp\cmTC_0eb6f.pdb /version:0.0 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_0eb6f.dir/intermediate.manifest CMakeFiles\cmTC_0eb6f.dir/manifest.res" failed (exit code 1) with the following output:
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /nologo: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /out:cmTC_0eb6f.exe: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /implib:cmTC_0eb6f.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /pdb:C:\Users\PC\Desktop\??????\????3\out\CMakeFiles\CMakeTmp\cmTC_0eb6f.pdb: Invalid argument
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /version:0.0: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /debug: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /INCREMENTAL: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /subsystem:console: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find kernel32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find user32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find gdi32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find winspool.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find shell32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find ole32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find oleaut32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find uuid.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find comdlg32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find advapi32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /MANIFEST: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /MANIFESTFILE:CMakeFiles\cmTC_0eb6f.dir/intermediate.manifest: Invalid argument
+CMakeFiles\cmTC_0eb6f.dir/manifest.res: file not recognized: File format not recognized
+NMAKE : fatal error U1077: D:\CMake\bin\cmake.exe : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/PC/Desktop/лабыСи/Лаба3/out/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_b9f4f\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\nmake.exe" -f CMakeFiles\cmTC_b9f4f.dir\build.make /nologo -L                  CMakeFiles\cmTC_b9f4f.dir\build
+Building C object CMakeFiles/cmTC_b9f4f.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @C:\Users\PC\AppData\Local\Temp\nm8E6F.tmp
+testCCompiler.c
+Linking C executable cmTC_b9f4f.exe
+	D:\CMake\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_b9f4f.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe /nologo @CMakeFiles\cmTC_b9f4f.dir\objects1.rsp @C:\Users\PC\AppData\Local\Temp\nm8F2C.tmp
+LINK Pass 1: command "C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe /nologo @CMakeFiles\cmTC_b9f4f.dir\objects1.rsp /out:cmTC_b9f4f.exe /implib:cmTC_b9f4f.lib /pdb:C:\Users\PC\Desktop\??????\????3\out\CMakeFiles\CMakeTmp\cmTC_b9f4f.pdb /version:0.0 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_b9f4f.dir/intermediate.manifest CMakeFiles\cmTC_b9f4f.dir/manifest.res" failed (exit code 1) with the following output:
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /nologo: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /out:cmTC_b9f4f.exe: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /implib:cmTC_b9f4f.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /pdb:C:\Users\PC\Desktop\??????\????3\out\CMakeFiles\CMakeTmp\cmTC_b9f4f.pdb: Invalid argument
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /version:0.0: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /debug: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /INCREMENTAL: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /subsystem:console: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find kernel32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find user32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find gdi32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find winspool.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find shell32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find ole32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find oleaut32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find uuid.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find comdlg32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find advapi32.lib: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /MANIFEST: No such file or directory
+C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ld.exe: cannot find /MANIFESTFILE:CMakeFiles\cmTC_b9f4f.dir/intermediate.manifest: Invalid argument
+CMakeFiles\cmTC_b9f4f.dir/manifest.res: file not recognized: File format not recognized
+NMAKE : fatal error U1077: D:\CMake\bin\cmake.exe : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+

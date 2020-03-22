@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/PC/Desktop/лабыСи/Лаба2/CMakeLists.txt
+  задача2.1(29).c
+C:\Users\PC\Desktop\лабыСи\Лаба2\задача2.1(29).c(39): warning C4715: binpow: значение возвращается не при всех путях выполнения
+  main.vcxproj -> C:\Users\PC\Desktop\лабыСи\Лаба2\out\Debug\main.exe

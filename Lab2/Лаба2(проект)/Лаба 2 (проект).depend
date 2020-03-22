@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1583187546 source:c:\users\pc\desktop\лабы Си\Лаба 2 (проект)\main.c
+	<stdio.h>
+	<malloc.h>
+	<locale.h>
+	<ctype.h>
+
+1582976862 c:\users\pc\desktop\лабы Си\Лаба 2 (проект)\libaforc.h
+
