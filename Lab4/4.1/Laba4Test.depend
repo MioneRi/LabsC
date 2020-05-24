@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1590341937 source:c:\users\pc\desktop\labsc\somelibs\strokiliba.c
+	"StrokiLiba.h"
+
+1590340314 c:\users\pc\desktop\labsc\somelibs\strokiliba.h
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+
+1590341545 source:c:\users\pc\desktop\labsc\example\laba4test\main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<string.h>
+	"C:\Users\PC\Desktop\LabsC\SomeLibs\StrokiLiba.h"
+
