@@ -1,9 +1,5 @@
 #include "StrokiLiba.h"
 
-#ifndef DEBUG_TEST
-#define DEBUG_TEST
-#endif // DEBUG_TEST
-
 // I have to include all this things in .h file.
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -540,6 +536,115 @@ int razmer(char n[])    ///THE SIZE OF ARRAY WITHOUT THE LAST ELEMENT ('\0')
     }
 
     return i ;
+}
+
+int AmountOfStrings(char* text, int amountOfBytes)
+{
+    int ourStrings = 0;
+    int i = 0;
+
+    for (int i = 0; i < amountOfBytes; ++i)
+    {
+        if (text[i] == '\n')
+        {
+            ++ourStrings;
+        }
+        else if (text[i] == '\0'){
+            ++ourStrings;
+            break;
+        }
+    }
+
+    return ourStrings;
+}
+
+int AmountOfComments(char* text, int totalBytes) // calculate amount of comments in bytes.
+{
+    int commentBytes = 0;
+    int tmpBytes = 0; // For storing potential bytes.
+    char sCom = '/';
+    char nextLine = '\n';
+    myBool singleCommentCanBegin = false;
+    myBool singleCommentBegin = false;
+
+    myBool multiCommentBegin = false;
+    myBool multiCommentCanBegin1 = false;
+    myBool multiCommentEnd = false;
+
+    myBool hooksOpen = false; // hooks means ""
+
+    for (int i = 0; i < (totalBytes ); ++i) // That wiil not read '\0' element
+    {
+        if (hooksOpen == false)
+        {
+            if (singleCommentBegin == false && multiCommentBegin == false)
+            {
+                if (text[i] == sCom)
+                {
+                    if (singleCommentCanBegin == false && multiCommentCanBegin1 == false){
+                        singleCommentCanBegin = true;
+                        multiCommentCanBegin1 = true;
+                    }
+                    else if (singleCommentCanBegin == true ){
+                        singleCommentBegin = true;
+                        multiCommentCanBegin1 = false;
+                        singleCommentCanBegin = false;
+                    }
+                }
+                else if (text[i] == '*')
+                {
+                    if (multiCommentCanBegin1 == true){
+                        multiCommentBegin = true;
+                        multiCommentCanBegin1 = false;
+                        singleCommentCanBegin = false;
+                    }
+                }
+                else{
+                    multiCommentCanBegin1 = false;
+                    singleCommentCanBegin = false;
+                }
+            }
+            else if (singleCommentBegin == true && multiCommentBegin == false)
+            {
+                if (text[i] != nextLine && text[i] != '\0' ){
+                    ++commentBytes;
+                }
+                else if (text[i] == nextLine || text[i] == '\0'){
+                    ++commentBytes;
+                    singleCommentBegin = false;
+                }
+            }
+            else if (multiCommentBegin == true && singleCommentBegin == false)
+            {
+                if (text[i] == '*' && text[i+1] != sCom){
+                    multiCommentEnd = false;
+                    ++commentBytes;
+                }
+                else if (text[i] == '*' && text[i+1] == sCom){
+                    multiCommentEnd = true;
+                }
+                else if (text[i] == '\0'){
+                    ++commentBytes;
+                    multiCommentEnd = true;
+                }
+                else{
+                    ++commentBytes;
+                    multiCommentEnd = false;
+                }
+            }
+            else{
+                return -1;
+            }
+        }
+        else if (hooksOpen == true)
+        {
+            if (text[i] == '"' || text[i] == '\n' || text[i] == '\0'){
+                hooksOpen = false;
+            }
+        }
+    }
+
+    return commentBytes;
 }
 
 int Perevodvint(char n[])

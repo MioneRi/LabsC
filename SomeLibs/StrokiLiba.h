@@ -45,3 +45,7 @@ void InitializeArrayOfSentences(char** text, char** sentencesArray, int amountOf
 char* TheLongestString(char** text, int amountOfStrings, int textLength);
 
 int LengthOfText(char** text, int amountOfStrings);
+
+int AmountOfStrings(char* text, int amountOfBytes);
+
+int AmountOfComments(char* text, int totalBytes); // calculate amount of comments in bytes.
