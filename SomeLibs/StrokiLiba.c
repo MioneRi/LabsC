@@ -6,6 +6,37 @@
 
 const int max_Length = 119;
 
+int BiggestInt(int x, int y)
+{
+    int big = 0;
+    if (x > y){
+        big = x;
+    }
+    else if (x < y){
+        big = y;
+    }
+    else{
+        big = x;
+    }
+    return big;
+}
+
+time_t BiggestTime(time_t x, time_t y)
+{
+    time_t big = 0 ;
+    if (x > y){
+        big = x;
+    }
+    else if (x < y){
+        big = y;
+    }
+    else{
+        big = x;
+    }
+    return big;
+
+}
+
 void StringToNull(char *ourStr, int length) // better to use function : memset()
 {
     for (int i = 0; i < length ; ++i){
@@ -16,8 +47,7 @@ void StringToNull(char *ourStr, int length) // better to use function : memset()
 double binpow (int a, int n) {
 	if (n == 0)
 		return 1;
-
-    if (n<0){
+    else if (n<0){
         if ((-1*n) % 2 == 1)
             return binpow (a, n+1) * (1.0/a);
         else {
@@ -25,7 +55,7 @@ double binpow (int a, int n) {
             return b * b;
         }
     }
-    if (n>0){
+    else if (n>0){
         if (n % 2 == 1)
             return binpow (a, n-1) * a;
         else {
@@ -33,6 +63,7 @@ double binpow (int a, int n) {
             return b * b;
         }
     }
+    return -1;
 }
 
 int LatinAlphabet(char letter)
@@ -158,7 +189,7 @@ void InitializeArrayOfWords(char** text, char** wordsArray ,int amountOfStrings,
                 wordBegin = false;
             }
 
-            if ( (nextCh == space || nextCh == '\n') && charFlag == true && sameWord == true && wordBegin == true){
+            if ( (nextCh == space || nextCh == nextLine) && charFlag == true && sameWord == true && wordBegin == true){
                 trueWord = true;
             }
             else{
@@ -541,7 +572,6 @@ int razmer(char n[])    ///THE SIZE OF ARRAY WITHOUT THE LAST ELEMENT ('\0')
 int AmountOfStrings(char* text, int amountOfBytes)
 {
     int ourStrings = 0;
-    int i = 0;
 
     for (int i = 0; i < amountOfBytes; ++i)
     {
@@ -647,6 +677,24 @@ int AmountOfComments(char* text, int totalBytes) // calculate amount of comments
     return commentBytes;
 }
 
+int myisdigit(char n)
+{
+    if (n>='0' && n<='9'){
+        return 1;
+    }
+    return false;
+}
+
+int IsPositiveInt(char n[])
+{
+    if (isint(n)){
+        if (Perevodvint(n) >= 0){
+            return true;
+        }
+    }
+    return false;
+}
+
 int Perevodvint(char n[])
 {
     int chislo = 0;
@@ -721,7 +769,7 @@ int isint(char n[])              ///  FUNCTION FOR CHEKING INT INPUT
     int counter = 0;
     int i=0;
     while (n[i]!='\0'){
-        if (isdigit(n[i]) == 0){
+        if (myisdigit(n[i]) == 0){
             counter++;
         }
         i++;
@@ -796,12 +844,114 @@ void PrintArray(char** text, size_t amountOfStrings) // Correct this!!!!!!
     }
 }
 
-typedef struct
+// ShopLine functions. ----------------------------------------------------------------
+
+time_t RemoveCustomerFront(ShopLine *ourlist) { // Delete element from begin and returns its CreatingTime.
+    Customer *prev;
+    time_t tmp;
+    if (ourlist->head == NULL) {// if there's no elements. // ѕроверку на наличие эл-ов делать до вызова этой ф-ии!
+        exit(2);
+    }
+
+    prev = ourlist->head;
+    ourlist->head = ourlist->head->next; // перекинули голову на след эл-т
+    if (ourlist->head) {// если след эл-т существует
+        ourlist->head->prev = NULL; // то говорим что у него уже нет предыдущего
+    }
+    if (prev == ourlist->tail){ // если удал€ыемый эл-т последний
+        ourlist->tail = NULL;
+    }// сохран€ем знаение удале=€емого эл-а дл€ последующего вывода
+    tmp = prev->creatingTime;
+    free(prev);
+    ourlist->qsize--;
+    return tmp;
+}
+
+void AddCustomerBack(ShopLine *ourlist, time_t creatingTime, int *indNum) { // Add element in the end.
+    Customer *tmp = (Customer*) malloc(sizeof(Customer));
+    if (tmp == NULL) {
+        exit(3);
+    }
+    tmp->creatingTime = creatingTime;
+    tmp->next = NULL;
+    tmp->prev = ourlist->tail;
+    tmp->indNumber = *indNum;
+    *indNum += 1;
+    if (ourlist->tail) { // если он не пустой.
+        ourlist->tail->next = tmp;
+    }
+    ourlist->tail = tmp;
+
+    if (ourlist->head == NULL) { // если пустой.
+        ourlist->head = tmp;
+    }
+    ourlist->qsize++;
+}
+
+ShopLine* createShopLine() {
+    ShopLine *tmp = (ShopLine*) malloc(sizeof(ShopLine));
+    tmp->qsize = 0;
+    tmp->head = tmp->tail = NULL;
+
+    return tmp;
+}
+
+void deleteShopLine(ShopLine **ourlist) { // deleteShopLine(&ourlist);
+    Customer *tmp = (*ourlist)->head;
+    Customer *next = NULL;
+    while (tmp) {
+        next = tmp->next;
+        free(tmp);
+        tmp = next;
+    }
+    free(*ourlist);
+    (*ourlist) = NULL;
+}
+
+void TryRemoveCustomer(time_t removeCustomer, time_t removeCustomerFlag1, time_t removeCustomerFlag2, int *customerWasRemoved, ShopLine* ourShopLine, time_t *maxTime )
 {
-    int *elements;
-    int size;
-    int capacity;
+    if (  (difftime(removeCustomerFlag2, removeCustomerFlag1) >= removeCustomer) && (*customerWasRemoved == false) && (ourShopLine->qsize != 0) ){
+        time_t CustomerTime = RemoveCustomerFront(ourShopLine);
+        time_t actualTime = time(0);
+        *maxTime = BiggestTime(*maxTime, difftime(actualTime, CustomerTime) );
+        *customerWasRemoved = true;
+    }
+}
 
-}DynArray;
+void UpdateRemoveCondition(time_t *removeCustomer, time_t *removeCustomerFlag1, time_t *removeCustomerFlag2, int *customerWasRemoved, ShopLine* ourShopLine )
+{
+    if ( (*customerWasRemoved == true) && (ourShopLine->qsize != 0) )
+    {
+        *removeCustomer = 1 + rand() % (17 - 1 + 1); // random number from 1 to 15 sec.
+        *removeCustomerFlag1 = time(0);
+        *removeCustomerFlag2 = time(0);
+        *customerWasRemoved = false;
+    }
+}
 
+void PrintShopLine(ShopLine *ourList)
+{
+    Customer *tmp = ourList->head;
+    printf("@: ");
+    while (tmp){
+        printf("(%d) ", tmp->indNumber); // Print individual number
+        tmp = tmp->next;
+    }
+    printf("\n");
+}
 
+void TryPrintShopLine(time_t const printTime, time_t *printFlag1, time_t *printFlag2, myBool *wasPrinted, ShopLine *ourList)
+{
+    if ( (difftime(*printFlag2, *printFlag1) >= printTime) && (*wasPrinted == false))
+    {
+        PrintShopLine(ourList);
+        *wasPrinted = true;
+    }
+
+    if ( *wasPrinted == true)
+    {
+        *printFlag1 = time(0);
+        *printFlag2 = time(0);
+        *wasPrinted = false;
+    }
+}
