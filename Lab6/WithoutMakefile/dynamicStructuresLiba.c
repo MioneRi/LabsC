@@ -88,34 +88,33 @@ void DeleteTree(Tree *element)
     }
 }
 
-Tree *AddNodeTree(Tree *ourParent, int value) // ourParent - is a parent of obj. that we have to add.
+Tree *AddNodeTree(Tree *ourTree, int value) // ourParent - is a parent of obj. that we have to add.
 {
-    Tree *tmp = (Tree*)malloc(sizeof(Tree));
-    tmp->key = value;
-    tmp->left = tmp->right = null;
-
-    if (ourParent == null){
-        ourParent = tmp;
+    if (ourTree == null){
+        Tree *tmp = (Tree*)malloc(sizeof(Tree));
+        tmp->key = value;
+        tmp->left = tmp->right = null;
+        ourTree = tmp;
     }
     else{
-        if (tmp->key < ourParent->key){
-            ourParent->left = tmp;
+        if (value < ourTree->key){
+            ourTree->left = AddNodeTree(ourTree->left, value);
         }
         else{
-            ourParent->right = tmp;
+            ourTree->right = AddNodeTree(ourTree->right, value);
         }
     }
 
-    return tmp;
+    return ourTree;
 }
 
 void MakeTreeFromQueue(Tree *ourTree, Queue *ourQueue)
 {
     Node *tmp = ourQueue->head->next; // Queue element.
-    Tree *ourParent = ourTree;
+//    Tree *ourParent = ourTree;
 
     while (tmp){ // while Queue - isn't end.
-        ourParent = AddNodeTree(ourParent, tmp->value);
+        AddNodeTree(ourTree, tmp->value);
         tmp = tmp->next; // Change Queue element.
     }
 
@@ -176,41 +175,41 @@ int HaveNode(Tree *element) // is 1 if there is at least one child.
     return result;
 }
 
-void CutTree(Tree *root)
+Tree *CutTree(Tree *ourNode) // можно возвращать значения
 {
-    Tree *actualNode = root;
     int CBC = false; // CBC - "Can be cutted"
 
-    if ( (actualNode->left != 0) && (actualNode->right != 0) ){
+    if ( (ourNode->left != 0) && (ourNode->right != 0) ){
         CBC = true;
     }
-    else if ( (actualNode->left != 0) && (actualNode->right == 0) ){
-        actualNode = actualNode->left;
+    else if ( (ourNode->left != 0) && (ourNode->right == 0) ){
+        ourNode->left = CutTree(ourNode->left);
         CBC = false;
     }
-    else if ( (actualNode->left == 0) && (actualNode->right != 0) ){
-        actualNode = actualNode->right;
+    else if ( (ourNode->left == 0) && (ourNode->right != 0) ){
+        ourNode->right = CutTree(ourNode->right);
         CBC = false;
     }
 
     if ( CBC == true  ) // Если имеются 2 ребенка проверяем есть ли у них дети
     {
-        if ( (HaveNode(actualNode->left) == true) && (HaveNode(actualNode->right) == false )){
-            actualNode = actualNode->left;
+        if ( (HaveNode(ourNode->left) == true) && (HaveNode(ourNode->right) == false )){
+            ourNode->left = CutTree(ourNode->left);
         }
-        else if ( (HaveNode(actualNode->left) == false) && (HaveNode(actualNode->right) == true ) ){
-            actualNode = actualNode->right;
+        else if ( (HaveNode(ourNode->left) == false) && (HaveNode(ourNode->right) == true ) ){
+            ourNode->right = CutTree(ourNode->right);
         }
-        else if ( (HaveNode(actualNode->left) == true) && (HaveNode(actualNode->right) == true ) ){ // не знаю что делать...
-            CutTree(actualNode->left);
-            CutTree(actualNode->right);
+        else if ( (HaveNode(ourNode->left) == true) && (HaveNode(ourNode->right) == true ) ){ // не знаю что делать...
+            ourNode->left = CutTree(ourNode->left);
+            ourNode->right = CutTree(ourNode->right);
         }
-        else if ( (HaveNode(actualNode->left) == false) && (HaveNode(actualNode->right) == false ) ){ // free()
+        else if ( (HaveNode(ourNode->left) == false) && (HaveNode(ourNode->right) == false ) ){ // free()
             CBC = false;
-            free(actualNode->left); // Всегда удаляем меньший элемент.
-            return;
+            free(ourNode->left); // Всегда удаляем меньший элемент.
+            ourNode->left = 0;
         }
         CBC = false;
     }
 
+    return ourNode;
 }

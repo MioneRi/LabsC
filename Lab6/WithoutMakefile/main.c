@@ -25,12 +25,13 @@ int main()
 //    }
 
     AddNodeBackQueue(ourQueue, 5);
-    AddNodeBackQueue(ourQueue, 4);
+    AddNodeBackQueue(ourQueue, 2);
     AddNodeBackQueue(ourQueue, 10);
-//    AddNodeBackQueue(ourQueue, 4);
-//    AddNodeBackQueue(ourQueue, 5);
-//    AddNodeBackQueue(ourQueue, 6);
+    AddNodeBackQueue(ourQueue, 11);
     AddNodeBackQueue(ourQueue, 7);
+    AddNodeBackQueue(ourQueue, 1);
+    AddNodeBackQueue(ourQueue, 3);
+    AddNodeBackQueue(ourQueue, 25);
 
     // Our Queue
     PrintQueue(ourQueue);

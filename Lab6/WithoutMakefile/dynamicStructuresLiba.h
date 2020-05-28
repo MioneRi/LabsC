@@ -58,4 +58,4 @@ void inorder(Tree *root);
 
 void PrintTree(Tree *root);
 
-void CutTree(Tree *root);
+Tree *CutTree(Tree *root);
