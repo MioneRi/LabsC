@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1590703481 source:c:\users\pc\desktop\labsc\lab6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<string.h>
+	<time.h>
+	"StrokiLiba.h"
+	"dynamicStructuresLiba.h"
+
+1590695248 c:\users\pc\desktop\labsc\somelibs\strokiliba.h
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	<string.h>
+	<time.h>
+
+1590695687 c:\users\pc\desktop\labsc\lab6\dynamicstructuresliba.h
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	<string.h>
+	<time.h>
+
+1590703534 source:c:\users\pc\desktop\labsc\lab6\dynamicstructuresliba.c
+	"dynamicStructuresLiba.h"
+
+1590703164 source:c:\users\pc\desktop\labsc\lab6\strokiliba.c
+	"StrokiLiba.h"
+
+1590695248 c:\users\pc\desktop\labsc\lab6\strokiliba.h
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	<string.h>
+	<time.h>
+

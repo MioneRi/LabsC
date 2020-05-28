@@ -10,7 +10,6 @@ const int max_Length = 119;
 int RandBetween(int from, int to) // includes values as they is.
 {
     srand(time(NULL)); // For different rand() results.
-    srand(rand());
     int ourValue = 0;
     ourValue = from + rand() % (to - from + 1); // random number
     return ourValue;
