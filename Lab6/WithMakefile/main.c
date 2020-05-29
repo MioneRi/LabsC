@@ -6,7 +6,7 @@
 #include <float.h>
 #include <string.h>
 #include <time.h>
-#include "StrokiLiba.h"
+//#include "StrokiLiba.h"
 #include "dynamicStructuresLiba.h"
 
 #ifndef DEBUG_TEST
@@ -49,6 +49,8 @@ int main()
     PrintTree(ourTree);
 
     printf("\n");
+    char a;
+    scanf("%c", &a);
     // Clean memory.
     DeleteQueue(&ourQueue);
     DeleteTree(ourTree);

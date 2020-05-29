@@ -58,4 +58,6 @@ void inorder(Tree *root);
 
 void PrintTree(Tree *root);
 
+int HaveNode(Tree *element); // is 1 if there is at least one child.
+
 Tree *CutTree(Tree *root);
