@@ -48,9 +48,10 @@ int main()
     CutTree(ourTree);
     PrintTree(ourTree);
 
-    printf("\n");
     char a;
     scanf("%c", &a);
+
+    printf("\n");
     // Clean memory.
     DeleteQueue(&ourQueue);
     DeleteTree(ourTree);

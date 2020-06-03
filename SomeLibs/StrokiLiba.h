@@ -1,3 +1,6 @@
+#ifndef STROKI_LIBA_H
+#define STROKI_LIBA_H
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <malloc.h>
@@ -12,10 +15,35 @@
 #define myBool int
 #define null 0
 
-typedef struct _Node Node;
-typedef struct _DblLinkedList DblLinkedList;
-typedef struct _Customer Customer;
-typedef struct _ShopLine ShopLine;
+// Some colors for console applications.
+//#define RED   "\x1B[31m"
+//#define GRN   "\x1B[32m"
+//#define YEL   "\x1B[33m"
+//#define BLU   "\x1B[34m"
+//#define MAG   "\x1B[35m"
+//#define CYN   "\x1B[36m"
+//#define WHT   "\x1B[37m"
+//#define RESET "\x1B[0m"
+
+typedef struct _Customer{  // Node struct
+    time_t creatingTime; // When it was created.
+    struct _Customer *next;
+    struct _Customer *prev;
+    int indNumber;
+} Customer;
+
+typedef struct _ShopLine{
+    size_t qsize; // amount of elements
+    Customer *head;  // pointer to begining
+    Customer *tail;  // pointer to ending
+
+}ShopLine;
+
+int myisdigit(char n);
+
+int razmer(char n[]); // without '\n' and '\0'
+
+int HasWord(char* ourStr);
 
 int RandBetween(int from, int to); // includes values as they is.
 
@@ -24,8 +52,6 @@ int BiggestInt(int x, int y);
 time_t BiggestTime(time_t x, time_t y);
 
 double binpow (int a, int n);
-
-int razmer(char n[]);
 
 int Perevodvint(char n[]);
 
@@ -63,21 +89,6 @@ int AmountOfComments(char* text, int totalBytes); // calculate amount of comment
 
 // ShopLine functions.
 
-typedef struct _Customer{  // Node struct
-    time_t creatingTime; // When it was created.
-    struct _Customer *next;
-    struct _Customer *prev;
-    int indNumber;
-} Customer;
-
-
-typedef struct _ShopLine{
-    size_t qsize; // amount of elements
-    Customer *head;  // pointer to begining
-    Customer *tail;  // pointer to ending
-
-}ShopLine;
-
 ShopLine* createShopLine();
 
 void deleteShopLine(ShopLine **ourlist); // deleteShopLine(&ourlist);
@@ -96,3 +107,9 @@ void TryRemoveCustomer(time_t removeCustomer, time_t removeCustomerFlag1, time_t
 void UpdateRemoveCondition(time_t *removeCustomer, time_t *removeCustomerFlag1, time_t *removeCustomerFlag2, int *customerWasRemoved, ShopLine* ourShopLine );
 
 void TryPrintShopLine(time_t const printTime, time_t *printFlag1, time_t *printFlag2, myBool *wasPrinted, ShopLine *ourList);
+
+void CheckCharMalloc(char *ourl);
+
+
+
+#endif // STROKI_LIBA_H

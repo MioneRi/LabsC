@@ -1,3 +1,6 @@
+#ifndef DYNAMIC_STRUCTURES_h
+#define DYNAMIC_STRUCTURES_h
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <malloc.h>
@@ -59,3 +62,5 @@ void inorder(Tree *root);
 void PrintTree(Tree *root);
 
 Tree *CutTree(Tree *root);
+
+#endif // DYNAMIC_STRUCTURES_h

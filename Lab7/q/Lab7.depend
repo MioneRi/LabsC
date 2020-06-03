@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1590709644 source:c:\users\pc\desktop\labsc\somelibs\dynamicstructuresliba.c
+	"dynamicStructuresLiba.h"
+
+1590812235 c:\users\pc\desktop\labsc\somelibs\dynamicstructuresliba.h
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	<string.h>
+	<time.h>
+
+1591200109 source:c:\users\pc\desktop\labsc\somelibs\strokiliba.c
+	"StrokiLiba.h"
+
+1591200949 c:\users\pc\desktop\labsc\somelibs\strokiliba.h
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	<string.h>
+	<time.h>
+
+1591216610 source:c:\users\pc\desktop\labsc\lab7\withoutmakefile\main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<string.h>
+	<time.h>
+	"C:\Users\PC\Desktop\LabsC\SomeLibs\StrokiLiba.h"
+	"C:\Users\PC\Desktop\LabsC\SomeLibs\dynamicStructuresLiba.h"
+	"SomeFunctions.h"
+	"Products.h"
+
+1591212297 c:\users\pc\desktop\labsc\lab7\withoutmakefile\somefunctions.h
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	<string.h>
+	<time.h>
+	"C:\Users\PC\Desktop\LabsC\SomeLibs\StrokiLiba.h"
+	"Products.h"
+
+1591217533 source:c:\users\pc\desktop\labsc\lab7\withoutmakefile\somefunctions.c
+	"SomeFunctions.h"
+
+1591216544 c:\users\pc\desktop\labsc\lab7\withoutmakefile\products.h
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	<string.h>
+	<time.h>
+	"C:\Users\PC\Desktop\LabsC\SomeLibs\StrokiLiba.h"
+
+1591203100 source:c:\users\pc\desktop\labsc\lab7\withoutmakefile\products.c
+	"Products.h"
+

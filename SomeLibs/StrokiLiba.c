@@ -6,6 +6,32 @@
 
 const int max_Length = 119;
 
+int HasWord(char* ourStr)
+{
+    int result = true;
+    char *tmp = ourStr;
+
+    int i = 0;
+    while (*tmp != '\0')
+    {
+        if (*tmp == ' ' ){
+            result = false;
+            return result;
+        }
+        if (  (*tmp == '\n') && (razmer(ourStr) == 0 ) ){
+            result = false;
+            return result;
+        }
+        if ( myisdigit(tmp[i]) ){
+            return false;
+        }
+
+        ++tmp;
+        ++i;
+    }
+
+    return result;
+}
 
 int RandBetween(int from, int to) // includes values as they is.
 {
@@ -601,7 +627,6 @@ int AmountOfStrings(char* text, int amountOfBytes)
 int AmountOfComments(char* text, int totalBytes) // calculate amount of comments in bytes.
 {
     int commentBytes = 0;
-    int tmpBytes = 0; // For storing potential bytes.
     char sCom = '/';
     char nextLine = '\n';
     myBool singleCommentCanBegin = false;
@@ -609,7 +634,6 @@ int AmountOfComments(char* text, int totalBytes) // calculate amount of comments
 
     myBool multiCommentBegin = false;
     myBool multiCommentCanBegin1 = false;
-    myBool multiCommentEnd = false;
 
     myBool hooksOpen = false; // hooks means ""
 
@@ -657,19 +681,16 @@ int AmountOfComments(char* text, int totalBytes) // calculate amount of comments
             else if (multiCommentBegin == true && singleCommentBegin == false)
             {
                 if (text[i] == '*' && text[i+1] != sCom){
-                    multiCommentEnd = false;
                     ++commentBytes;
                 }
                 else if (text[i] == '*' && text[i+1] == sCom){
-                    multiCommentEnd = true;
+
                 }
                 else if (text[i] == '\0'){
                     ++commentBytes;
-                    multiCommentEnd = true;
                 }
                 else{
                     ++commentBytes;
-                    multiCommentEnd = false;
                 }
             }
             else{
@@ -808,7 +829,7 @@ int isdouble(char n[])  ///FUNCTION OF CHECKING OF DOUBLE INPUT
     int ZnakAfterdotOrComma = 0;
     int i=0;
     while (n[i]!='\0'){
-        if (isdigit(n[i]) == 0){
+        if (myisdigit(n[i]) == 0){
             if (n[i]=='.' || n[i]==','){
                 dotorcomma++;
             }
@@ -963,5 +984,13 @@ void TryPrintShopLine(time_t const printTime, time_t *printFlag1, time_t *printF
         *printFlag1 = time(0);
         *printFlag2 = time(0);
         *wasPrinted = false;
+    }
+}
+
+void CheckCharMalloc(char *ourl)
+{
+    if (!ourl){
+        printf("Error. Bad malloc. There no memory ... \n\n");
+        exit(1);
     }
 }

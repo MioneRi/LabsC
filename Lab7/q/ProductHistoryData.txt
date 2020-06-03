@@ -1,0 +1,18 @@
+Wed Jun 03 23:55:05 2020
+ : 
+    ASUS_P_N_40  212$ (1) (1) China
+    Microsoft_Windows_10_Professional  632$ (1) (1) USA
+    Avira  200$ (1) (1) Canada
+    SVG-Edit  1200$ (1) (1) USA
+    Hynix_DDD  37$ (1) (1) Ukraine
+    Afox-GeForce-GT1  37$ (1) (1) USA
+    Crucial_BX500  40$ (1) (1) China
+    Lenovo_S145  310$ (1) (1) China
+    Gigabyte_S  100$ (1) (1) Canada
+Wed Jun 03 23:55:43 2020
+ : 
+    ASUS_P_N_40  212$ (1) (1) China
+    N-Tech_King_Office_S  500$ (0) (1) Russia
+    N-Tech_King_Office_M  600$ (1) (0) Russia
+    Acer_Veriton_N  400$ (1) (1) Canada
+    SVG-Edit  1200$ (1) (1) USA
